@@ -58,7 +58,7 @@ public class IntQueue {
         }
     }
 
-    //프런트 데이터 peek
+    //프런트 데이터 peek.
     public int peek() throws EmptyIntQueueException {
         if (num <= 0) {
             throw new EmptyIntQueueException();

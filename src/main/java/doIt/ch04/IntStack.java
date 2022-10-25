@@ -56,7 +56,7 @@ public class IntStack {
             if (stk[i] == x) {
                 return i;
             }
-        } return -1; //스택에 값 없음
+        } return -1; //스택에 값 없음.
     }
 
     //clear : 스택 비우기
