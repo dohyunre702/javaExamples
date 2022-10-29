@@ -1,5 +1,5 @@
 package javaJungsuk;
-
+//예제
 public class RepairableTest {
     public static void main(String[] args) {
         Tank tank = new Tank();

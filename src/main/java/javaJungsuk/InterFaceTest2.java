@@ -1,5 +1,5 @@
 package javaJungsuk;
-
+//예제
 public class InterFaceTest2 {
 
     //인터페이스
