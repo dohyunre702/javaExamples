@@ -1,4 +1,4 @@
-package doIt.ch06;
+package doIt.ch06.bubbleSort;
 
 import java.util.Scanner;
 

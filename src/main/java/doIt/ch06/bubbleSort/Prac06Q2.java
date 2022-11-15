@@ -1,4 +1,4 @@
-package doIt.ch06.bubblesort;
+package doIt.ch06.bubbleSort;
 
 import java.util.Scanner;
 
@@ -18,7 +18,6 @@ public class Prac06Q2 {
             for(int j = n-1; j > i; j--) {
                 if(a[j-1] > a[j]) //뒤의 2개 비교해서 교환하기
                     swap(a, j-1, j);
-
             }
         }
     }
