@@ -82,7 +82,7 @@ public class BinTree <K,V> {
         } else {
             if (node.right == null)
                 node.right = new Node<K, V>(key, data, null, null);
-            else addNode(node.right, key, data)
+            else addNode(node.right, key, data);
         }
     }
 
