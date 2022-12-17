@@ -48,5 +48,23 @@ public class Main {
         while(li.hasPrevious()) {
             System.out.println(li.previous());
         }
+
+        //iterator - add
+        while(li.hasNext()) {
+            int number = (int) li.next();
+            if (number == 30){
+                li.add(35);
+            }
+            System.out.println(number);
+        }
+
+        //iterator - remove
+        while(li.hasNext()) {
+            int number = (int) li.next();
+            if (number == 30){
+                li.remove();
+            }
+            System.out.println(number);
+        }
     }
 }

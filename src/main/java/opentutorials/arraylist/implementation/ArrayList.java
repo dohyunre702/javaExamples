@@ -97,5 +97,14 @@ public class ArrayList {
         public Object previous() {
             return elementData[--nextIdx];
         }
+
+        public void add(Object element) {
+            ArrayList.this.add(nextIdx++, element); //add 메서드명 충돌 방지를 위함
+        }
+
+        public void remove() { //현재의 엘리먼트 삭제 > 엘리먼트 한번이라도 next한 뒤 사용해야 함
+            ArrayList.this.remove(nextIdx-1);
+            nextIdx--;
+        }
     }
 }
