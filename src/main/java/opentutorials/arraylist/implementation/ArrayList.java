@@ -1,5 +1,7 @@
 package opentutorials.arraylist.implementation;
 
+import java.util.ListIterator;
+
 //배열을 사용한 리스트 자료구조 만들기
 public class ArrayList {
     //객체 생성
@@ -69,5 +71,22 @@ public class ArrayList {
             if (elementData[i] == o) return i;
         }
         return -1; //찾는 값이 없다
+    }
+
+    //내부 클래스 ListIterator
+    public ListIterator listIterator() { //접근제어자 + 데이터 타입 + 메소드
+        return new ListIterator();
+    }
+
+    class ListIterator{
+        private int nextIdx = 0;
+        public Object next() {
+            return elementData[nextIdx++];
+            /* = 같은 코드
+            Object returnData = elementData[nextIdx];
+            nextIdx++;
+            return returnData;
+             */
+        }
     }
 }

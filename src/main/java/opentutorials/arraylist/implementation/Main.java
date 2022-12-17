@@ -1,5 +1,7 @@
 package opentutorials.arraylist.implementation;
 
+import java.util.ListIterator;
+
 public class Main {
     public static void main(String[] args) {
         ArrayList numbers = new ArrayList();
@@ -35,5 +37,11 @@ public class Main {
 
         //indexOf
         System.out.println(numbers.indexOf(20));
+
+        //iterator
+        ArrayList.ListIterator li = numbers.listIterator();
+        while(true) { //초과 시 null..nextidx=100이후 에러
+            System.out.println(li.next());
+        }
     }
 }
