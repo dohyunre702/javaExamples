@@ -9,6 +9,11 @@ public class Main {
         numbers.addLast(30);
         numbers.addLast(40);
 
+        //add
+        numbers.add(1, 15);
+
+        //addFirst
+        numbers.addFirst(5);
 
 
     }
