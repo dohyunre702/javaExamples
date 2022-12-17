@@ -28,6 +28,26 @@ public class Library {
 
         //iteration(반복)
         Iterator it = numbers.iterator();
+        System.out.println("\niterator");
+        while(it.hasNext()) {
+            int value = (int) it.next();
+            if(value == 30){
+                it.remove();
+            }
+            System.out.println(value);
+        }
+        System.out.println(numbers);
+
+        //iterator for문
+        System.out.println("nfor each");
+        for(int value : numbers) {
+            System.out.println(value);
+        }
+
+        System.out.println("nfor");
+        for(int i = 0; i < numbers.size(); i++) {
+            System.out.println(numbers.get(i));
+        }
 
     }
 
