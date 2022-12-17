@@ -25,6 +25,16 @@ public class ArrayList {
         return true;
     }
 
+    public Object remove(int idx) { //remove(): 인덱스에 해당하는 값 삭제
+        Object removed = elementData[idx];
+        for(int i = idx+1; i < size; i++) {
+            elementData[i-1] = elementData[i];
+        }
+        size--;
+        elementData[size] = null;
+        return removed;
+    }
+
     public String toString() { //객체를 문자열로 출력
         String str = "[";
         for(int i = 0; i < size; i++) {
@@ -35,6 +45,5 @@ public class ArrayList {
         }
         return str + "]";
     }
-
 
 }
