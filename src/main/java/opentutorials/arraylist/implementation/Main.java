@@ -27,5 +27,7 @@ public class Main {
         //toString
         System.out.println(numbers);
 
+        //get
+        System.out.println(numbers.get(1));
     }
 }

@@ -54,4 +54,9 @@ public class ArrayList {
         return str + "]";
     }
 
+    public Object get(int idx) { //인덱스에 해당하는 값 리턴
+        return elementData[idx];
+    }
+
+
 }
