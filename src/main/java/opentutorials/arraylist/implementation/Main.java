@@ -43,5 +43,10 @@ public class Main {
         while(li.hasNext()) { //종료조건 추가 (hasNext())
             System.out.println(li.next());
         }
+
+        //iterator - previous hasPrevious
+        while(li.hasPrevious()) {
+            System.out.println(li.previous());
+        }
     }
 }

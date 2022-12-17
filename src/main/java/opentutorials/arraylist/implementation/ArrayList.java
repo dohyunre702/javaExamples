@@ -91,5 +91,11 @@ public class ArrayList {
             return returnData;
              */
         }
+        public boolean hasPrevious() {
+            return nextIdx > 0;
+        }
+        public Object previous() {
+            return elementData[--nextIdx];
+        }
     }
 }
