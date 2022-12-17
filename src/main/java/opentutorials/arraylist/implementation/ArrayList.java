@@ -35,6 +35,14 @@ public class ArrayList {
         return removed;
     }
 
+    public Object removeFirst() { //첫번째 값 삭제
+        return remove(0);
+    }
+
+    public Object removeLast() { //마지막 값 삭제
+        return remove(size-1);
+    }
+
     public String toString() { //객체를 문자열로 출력
         String str = "[";
         for(int i = 0; i < size; i++) {

@@ -18,6 +18,12 @@ public class Main {
         //remove
         System.out.println(numbers.remove(1));
 
+        //removeFirst
+        numbers.removeFirst();
+
+        //removeLast
+        numbers.removeLast();
+
         //toString
         System.out.println(numbers);
 
