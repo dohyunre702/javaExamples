@@ -80,6 +80,9 @@ public class ArrayList {
 
     class ListIterator{
         private int nextIdx = 0;
+        public boolean hasNext() {
+            return nextIdx < size();
+        }
         public Object next() {
             return elementData[nextIdx++];
             /* = 같은 코드

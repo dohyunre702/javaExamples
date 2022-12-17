@@ -40,7 +40,7 @@ public class Main {
 
         //iterator
         ArrayList.ListIterator li = numbers.listIterator();
-        while(true) { //초과 시 null..nextidx=100이후 에러
+        while(li.hasNext()) { //종료조건 추가 (hasNext())
             System.out.println(li.next());
         }
     }
