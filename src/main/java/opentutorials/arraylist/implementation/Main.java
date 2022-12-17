@@ -15,6 +15,8 @@ public class Main {
         //addFirst
         numbers.addFirst(5);
 
+        //toString
+        System.out.println(numbers);
 
     }
 }

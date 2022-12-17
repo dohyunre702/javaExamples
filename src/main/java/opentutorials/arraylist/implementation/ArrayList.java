@@ -25,5 +25,16 @@ public class ArrayList {
         return true;
     }
 
+    public String toString() { //객체를 문자열로 출력
+        String str = "[";
+        for(int i = 0; i < size; i++) {
+            str += elementData[i];
+            if(i < size-1) {
+                str += ",";
+            }
+        }
+        return str + "]";
+    }
+
 
 }
