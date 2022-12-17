@@ -58,5 +58,16 @@ public class ArrayList {
         return elementData[idx];
     }
 
+    public int size() { //용량
+        return size;
+        //변수 직접 접근하지 않고 메소드 사용하는 이유는,
+        //외부에서 size변수값을 마음대로 수정하지 못하기 때문
+    }
 
+    public int indexOf(Object o) { //검색하기
+        for(int i = 0; i < size; i++) {
+            if (elementData[i] == o) return i;
+        }
+        return -1; //찾는 값이 없다
+    }
 }

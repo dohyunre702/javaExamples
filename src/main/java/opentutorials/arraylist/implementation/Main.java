@@ -29,5 +29,11 @@ public class Main {
 
         //get
         System.out.println(numbers.get(1));
+
+        //size
+        numbers.size();
+
+        //indexOf
+        System.out.println(numbers.indexOf(20));
     }
 }
