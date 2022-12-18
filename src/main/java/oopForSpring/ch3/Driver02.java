@@ -1,4 +1,4 @@
-package oopForSpring.extend;
+package oopForSpring.ch3;
 
 public class Driver02 {
     public static void main(String[] args) {
