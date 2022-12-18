@@ -11,6 +11,10 @@ public class Main {
         //add
         numbers.add(1,15);
 
+        //remove
+        System.out.println(numbers.remove(0));
+
+        //toString
         System.out.println(numbers);
 
     }
