@@ -48,6 +48,33 @@ public class LinkedList {
         return x;
     }
 
+    //add
+    public void add(int k, Object input) {
+        if(k == 0) addFirst(input);
+        else {
+            Node tmp1 = node(k-1);
+            Node tmp2 = tmp1.next;
+            Node newNode = new Node(input);
+            tmp1.next = newNode;
+            newNode.next = tmp2;
+            size++;
+            if(newNode.next == null) tail = newNode;
+        }
+    }
+
+    public String toString() {
+        if(head == null) return "[]";
+        Node tmp = head;
+        String str = "[";
+
+        while(tmp.next != null) {
+            str += tmp.data + ", ";
+            tmp = tmp.next;
+        }
+        str += tmp.data;
+        return str + "]";
+    }
+
 
 
 
