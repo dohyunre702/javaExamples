@@ -1,4 +1,4 @@
-package oopForSpring.ch3;
+package oopForSpring.extend;
 
 public class Animal {
     String myClass;

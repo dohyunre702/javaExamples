@@ -1,4 +1,4 @@
-package oopForSpring.ch3;
+package oopForSpring.extend;
 
 public class Penguin extends Birds implements Swimable{
 

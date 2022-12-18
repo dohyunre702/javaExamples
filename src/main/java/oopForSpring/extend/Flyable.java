@@ -1,4 +1,4 @@
-package oopForSpring.ch3;
+package oopForSpring.extend;
 
 public interface Flyable {
     void fly();
