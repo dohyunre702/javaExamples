@@ -39,8 +39,14 @@ public class LinkedList {
         }
     }
 
-
-    //node
+    //node: 인덱스값에 해당하는 노드 객체 리턴
+    Node node(int idx) { //외부에 노출되면 안되는 내부 객체
+        Node x = head;
+        for(int i = 0; i < idx; i++) {
+            x = x.next;
+        }
+        return x;
+    }
 
 
 
