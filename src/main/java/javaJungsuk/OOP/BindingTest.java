@@ -4,17 +4,23 @@ public class BindingTest {
     public static void main(String[] args) {
         Parent p = new Child();
         Child c = new Child();
+        int x = 0;
 
-        System.out.println("p.x = " + p.x);
+        p.setX(x);
         p.method();
-
+        System.out.println();
         System.out.println("c.x = " + c.x);
         c.method();
     }
 }
 
 class Parent {
-    int x = 100;
+    private int x = 100;
+
+    public int getX() {return x;}
+    public void setX(int x) {
+        System.out.println("p.x = " + this.x);
+    }
     void method() {
         System.out.println("Parent Method");
     }
@@ -25,7 +31,7 @@ class Child extends Parent {
 
     void method() {
         System.out.println("x = " + x);
-        System.out.println("super.x = " + super.x);
+        System.out.println("super.x = " + super.getX());
         System.out.println("this.x = " + this.x);
     }
 }
