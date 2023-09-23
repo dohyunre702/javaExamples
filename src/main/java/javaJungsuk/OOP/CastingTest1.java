@@ -12,6 +12,19 @@ public class CastingTest1 {
 
         fe2 = (FireEngine) modelcar;
         fe2.water(); //(다운)조상타입의 참조변수가 자손타입의 참조변수로 형변환됨 > 자손 타입의 멤버를 사용할 수 있다.
+
+        //instanceof
+        if(fe instanceof FireEngine) {
+            System.out.println("This is a FireEngine instance.");
+        }
+
+        if(fe instanceof ModelCar) {
+            System.out.println("This is a Car instance.");
+        }
+
+        if(fe instanceof Object) {
+            System.out.println("This is an Object instance.");
+        }
     }
 }
 
